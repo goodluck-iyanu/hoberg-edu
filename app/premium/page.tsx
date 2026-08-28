@@ -1,6 +1,6 @@
-import React from 'react';
+﻿import React from 'react';
 import { Crown, Sparkles, CheckCircle2, ShieldCheck, Zap, HeartHandshake } from 'lucide-react';
-import { PaystackButton } from '@/components/premium/PaystackButton';
+import { Button } from '@/components/ui/Button';
 
 export default function PremiumPage() {
   return (
@@ -22,7 +22,7 @@ export default function PremiumPage() {
         </p>
       </div>
 
-      {/* Pricing Card & Paystack Checkout */}
+      {/* Pricing Card */}
       <div className="max-w-xl mx-auto bg-white border-2 border-gold-400/80 rounded-3xl p-8 sm:p-10 shadow-xl relative overflow-hidden">
         <div className="absolute top-0 right-0 bg-gold-400 text-navy-950 text-xs font-extrabold px-4 py-1 rounded-bl-xl uppercase tracking-wider">
           Monthly Membership
@@ -34,7 +34,7 @@ export default function PremiumPage() {
             <span className="text-4xl sm:text-5xl font-black text-navy-950">₦5,000</span>
             <span className="text-navy-500 font-semibold">/ month</span>
           </div>
-          <p className="text-xs text-navy-500 mt-2">Billed automatically via Paystack. Cancel online anytime.</p>
+          <p className="text-xs text-navy-500 mt-2">Billed automatically. Cancel online anytime.</p>
         </div>
 
         <div className="space-y-3.5 mb-8">
@@ -56,10 +56,13 @@ export default function PremiumPage() {
           </div>
         </div>
 
-        <PaystackButton className="w-full justify-center" />
+        <Button variant="gold" size="lg" className="w-full justify-center gap-2 shadow-lg shadow-gold-500/20 hover:scale-[1.02] transition-transform">
+          <Crown className="w-5 h-5 text-navy-950" />
+          <span>Subscribe Now — Coming Soon</span>
+        </Button>
 
         <div className="pt-6 mt-6 border-t border-navy-100 text-center text-xs text-navy-400">
-          🔒 Secure 256-bit encrypted checkout handled by Paystack PCI-DSS infrastructure.
+          🔒 Secure 256-bit encrypted checkout.
         </div>
       </div>
 
