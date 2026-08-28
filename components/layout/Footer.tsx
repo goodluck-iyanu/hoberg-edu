@@ -58,6 +58,12 @@ export function Footer() {
             <div className="text-xs text-navy-500">
               © 2026 Hoberg Edu Technologies. All rights reserved.
             </div>
+            <div className="text-xs text-navy-500 mt-1">
+              Built by{' '}
+              <a href="https://hoberg.com.ng" target="_blank" rel="noopener noreferrer" className="text-brand-400 hover:text-brand-300 transition-colors font-medium">
+                Hoberg Digital Agency
+              </a>
+            </div>
           </div>
 
         </div>
